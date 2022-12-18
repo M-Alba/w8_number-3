@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+a, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5222D0;
+}
+
+body {
+    font-family: 'Intro_regular', sans-serif;
+    color: black;
+}
+
+.wrapper {
+    max-width: 1440px;
+    padding-left: 74px;
+    padding-right: 74px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 49px;
+}
+
+.header__button {
+    width: 115px;
+    height: 38px;
+    background: #5222D0;
+    font-size: 13px;
+    line-height: 13px;
+    color: #FFFFFF;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.header__button:hover {
+    box-shadow: 1px 1px 9px 7px rgba(250,  249,  247, 0.58) inset;
+}
+
+.possibilities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
+    column-gap: 75px;
+}
+
+.possibilities__title {
+    grid-column: 1/-1;
+    margin-top: 102px;
+    margin-bottom: 14px;
+    font-size: 60px;
+    line-height: 72px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.card__picture {
+    flex: 1;
+    max-height: 278px;
+    margin-bottom: 15px;
+}
+
+.card__title {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+
+.card__text {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    background-color: #EC615B;
+}
+
+.subscribe__title {
+    margin: 0 22px 6px 18px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.subscribe__contact {
+    margin: 0 22px 23px 20px;
+    padding: 9px 0 9px 14px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 20px;
+}
+
+.subscribe__button {
+    width: 135px;
+    height: 38px;
+    margin-left: 18px;
+    background: #5222D0;
+    font-size: 13px;
+    line-height: 13px;
+    color: #FFFFFF;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.subscribe__button:hover {
+    box-shadow: 1px 1px 9px 7px rgba(250,  249,  247, 0.58) inset;
+}
+
+.footer-menu {
+    display: flex;
+    padding-top: 86px;
+    padding-bottom: 80px;
+    list-style: none;
+}
+
+.footer-menu__link {
+    margin-right: 34px;
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    line-height: 32px;
+}
